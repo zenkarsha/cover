@@ -1,0 +1,41 @@
+.btnSubmit {
+  height:60px;
+  width: 162px;
+  border:none; background:none;
+  text-indent:-9999;
+  background:url(../images/submitbtn.png);
+  background-position: 0 -60px;
+  outline:0;
+  vertical-align: top;
+  &:hover,
+  &:focus {
+    background-position: 0 0;
+  }
+}
+.fbSubmit {
+  height:60px;
+  width: 162px;
+  border:none; background:none;
+  text-indent:-9999;
+  background:url(../images/facebookbtn.png);
+  background-position: 0 -60px;
+  outline:0;
+  vertical-align: top;
+  &:hover,
+  &:focus {
+    background-position: 0 0;
+  }
+}
+.btn-gold {
+  color: #222222;
+  background-color: gold;
+  border-color: #eea236;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #222222;
+    background-color: #f1cc45;
+    border-color: #d58512;
+  }
+}

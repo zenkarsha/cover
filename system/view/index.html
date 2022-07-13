@@ -1,0 +1,78 @@
+---
+$title
+$description
+$path
+---
+
+<div class="user-input row">
+  <div id="generator">
+    <h1>{{$title}}</h1>
+    <h2>{{$description}}</h2>
+    <form role="form" action="generate" id="kxgenForm" method="post">
+      <div class="col-sm-12">
+        <div id="coverbox">
+          <div id="coverprint"><img src="images/blackbg.png"></div>
+          <div id="loading" class="col-sm-12"></div>
+        </div>
+      </div>
+      <div class="col-sm-12" id="settings">
+        <div class="row">
+          <div class="col-sm-3">
+            <input type="text" id="template1" name="template1" value="我是" class="form-control readonly" readonly="readonly">
+          </div>
+          <div class="col-sm-3">
+            <input type="text" id="something" name="something" value="鄭南榕" class="form-control">
+          </div>
+          <div class="col-sm-3">
+            <input type="text" id="template2" name="template2" value=" 我主張" class="form-control readonly" readonly="readonly">
+          </div>
+          <div class="col-sm-3">
+            <input type="text" id="verb" name="verb" value="台灣獨立" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <input type="text" id="other" name="other" value="-- 鄭南榕(1947-1989)" placeholder="請輸入文字" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="sentence">造句格式</label>
+            <select class="form-control" name="sentence" id="sentence">
+              <option value="1">自己的◯◯自己◯</option>
+              <option value="2">無限期支持◯◯◯◯</option>
+              <option value="3">今天◯◯◯明天◯◯◯</option>
+              <option value="4">超越◯◯的◯◯</option>
+              <option value="5">不要再有下一個◯◯</option>
+              <option value="6">當◯◯成為事實◯◯就是義務</option>
+              <option value="7" selected="selected">我是◯◯◯我主張◯◯◯◯</option>
+              <option value="8">投給◯◯◯就是◯◯◯◯◯</option>
+              <option value="9">我把你們當◯看</option>
+              <option value="10">地方的◯◯需要◯◯</option>
+              <option value="11">我是◯我反◯</option>
+              <option value="12">退回◯◯捍衛◯◯</option>
+              <option value="13">◯◯◯◯◯◯◯◯◯◯</option>
+              <option value="14">◯◯◯只會抱怨◯◯◯把失敗歸諸◯◯◯◯◯</option>
+            </select>
+          </div>
+          <div class="col-sm-2">
+            <label for="colorbg">背景顏色</label>
+            <input type="text" name="colorbg" id="colorbg" class="form-control minicolors" value="#000000" data-color-format="hex">
+          </div>
+          <div class="col-sm-2">
+            <label for="color1">文字顏色一</label>
+            <input type="text" name="color1" id="color1" class="form-control minicolors" value="#ffffff" data-color-format="hex">
+          </div>
+          <div class="col-sm-2">
+            <label for="color2">文字顏色二</label>
+            <input type="text" name="color2" id="color2" class="form-control minicolors" value="#ff0000" data-color-format="hex">
+          </div>
+        </div>
+      </div>
+      <input type="hidden" value="" name="directpost" id="directpost">
+      <input type="button" value="按此下載圖片" class="submit btn btn-danger btn-lg" id="kxgenSubmit" style="margin-bottom:10px; margin-top:20px">
+    </form>
+  </div>
+</div>

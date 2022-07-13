@@ -1,0 +1,8 @@
+<?php
+
+$productList = array
+(
+  ''
+);
+
+?>

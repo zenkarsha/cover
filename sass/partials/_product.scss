@@ -1,0 +1,37 @@
+.product-list {
+  @include pie-clearfix;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  .product-item {
+    padding: 0;
+    margin: 0;
+    @include isolate-grid(2,4);
+    @include margin-trailer(1);
+  }
+  .product-image {
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      @include box-shadow(2px 2px 5px 0px rgba(50, 50, 50, 0.2));
+    }
+  }
+  .product-name {
+    text-align: center;
+    padding-left: 5px;
+    line-height: rhythm(1.5);
+    color: $black;
+  }
+
+  @include at-breakpoint($pad) {
+    .product-item {
+      @include isolate-grid(3,9);
+    }
+  }
+  @include at-breakpoint($desktop) {
+    .product-item {
+      @include isolate-grid(4,24);
+    }
+  }
+}
